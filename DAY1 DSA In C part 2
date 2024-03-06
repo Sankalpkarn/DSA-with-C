@@ -1,0 +1,26 @@
+#include<stdio.h> 
+#include<conio.h> 
+#include<string.h> 
+struct student //How to create a specfic no. of data in a struct
+{ 
+ int rollno; 
+ char name[20]; 
+}; 
+void main(){ 
+    struct student stu[10];  
+    int i,n; 
+     
+    printf("enter the total no. of students\n"); 
+    scanf("%d",&n); 
+    printf("enter the details\n"); 
+    for(i=0;i<n;i++) 
+    { 
+      printf("Enter the name : "); 
+      fflush(stdin); 
+      gets(stu[i].name); 
+      printf("Enter the roll no. : "); 
+      scanf("%d",&stu[i].rollno); 
+    } 
+ 
+    getch(); 
+    }
