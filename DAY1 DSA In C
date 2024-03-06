@@ -1,0 +1,18 @@
+#include<stdio.h> 
+#include<conio.h> 
+#include<string.h> 
+struct student //learning to create structure in C
+{ 
+ int rollno; 
+ char name[20]; 
+}; 
+void main(){ 
+    struct student stu1;  
+    printf("enter the name"); 
+    gets(stu1.name); 
+    printf("enter the roll no."); 
+    scanf("%d",&stu1.rollno); 
+    printf("%s\n",stu1.name); 
+    printf("%d",stu1.rollno); 
+    getch(); 
+    }
